@@ -29,7 +29,7 @@ export default () => {
   const isLoading = () => !!$loadingStateMap()[$currentConversationId()]
 
   onMount(() => {
-    createShortcut(['Control', 'Enter'], () => {
+    createShortcut(['Command', 'Enter'], () => {
       $isSendBoxFocus() && handleSend()
     })
   })
